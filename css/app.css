@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(110, 173, 202);
+    color: rgb(39, 55, 196);
+
+}
+
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+
+.board-container {
+    float: left;
+
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.cell {
+    width: 35px;
+    height: 25px;
+    border: 1px solid #CCC;
+    padding: 10px 5px 5px 5px;
+
+    background-color: #EEE;
+
+    font-size: 16px;
+    text-align: center;
+    box-shadow: inset 5px 5px 10px #FFF, inset -3px -3px 5px #777;
+
+    cursor: pointer;
+    transition-property: background-color, box-shadow;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+.cell.glow {
+    background-color: rgb(74, 235, 82);
+} 
+
+.cell.revealed {
+    background-color: #DDD;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.hint {
+    width: 30px;
+    height: 30px;
+
+}
+
+.hiden {
+    display: none;
+}
+
+.play-button {
+    width: 40px;
+    height: 40px;
+    background-color: #777;
+}
+
+.second-container {
+
+    float: right;
+    margin-left: 30px
+}
+
+.first-container {
+    float: left;
+    margin-left: 30px
+}
+
+.main-container {
+
+    width: 50%;
+    margin: 50px auto 100px auto;
+    text-align: left;
+}
+

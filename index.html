@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body oncontextmenu="return false;" onload="init()">
+    <div class="main-container">
+        <div class="first-container">
+            <!-- <h2>New Game?</h2> -->
+            <img class="play-button" onClick="init()" src="">
+            <h3 class="time"></h3>
+            <button onClick="safeClick()">Safe click</button>
+            <h4>Number of clicks available: <span></span></h4>
+            <h3>Number of Lifes: <span></span></h3>
+
+            <button onClick="menualyClick()">Create Meanualy</button>
+            
+        </div>
+        <div class="second-container">
+            <h3>chose your level</h3>
+            <button onClick="changeSizeSmall()">Easy</button>
+            <button onClick="changeSizeMidium()">Medium</button>
+            <button onClick="changeSizeBig()">Hard</button>
+            <br>
+            <h3>Hint?</h3>
+            <img class="hint" onClick="hintClick()" src="">
+            <img class="hint" onClick="hintClick()" src="">
+            <img class="hint" onClick="hintClick()" src="">
+    
+    
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="main-container">
+        <div class="board-container"></div> 
+    </div>
+  
+
+
+
+
+
+
+    <script src="js/utils.js"></script> 
+    <script src="js/game.js"></script>
+</body>
+</html>
